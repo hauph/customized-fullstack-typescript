@@ -1,4 +1,7 @@
-# FAST FullStack React with TypeScript starter kit.
+WORK IN PROGRESS!
+A README will be released soon :)
+
+<!-- # FAST FullStack React with TypeScript starter kit.
 
 <img src="https://github.com/gilamran/fullstack-typescript/raw/master/assets/images/logo.png" width="150">
 
@@ -96,4 +99,4 @@ All applications require a config mechanism, for example, `SLACK_API_TOKEN`. Thi
 
 #### Licence
 
-This code is released as is, under MIT licence. Feel free to use it for free for both commercial and private projects. No warranty provided.
+This code is released as is, under MIT licence. Feel free to use it for free for both commercial and private projects. No warranty provided. -->
