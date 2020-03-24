@@ -1,10 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'; // Pages
 import Home from '../Home/index';
-//import StateType from '../../type/StateType.d.ts';
+import {DemoState} from '../../type/StateType';
 
+interface Props {
+    demo_state: DemoState
+}
 
-export default class MainContainer extends React.Component {
+interface State {
+    
+}
+
+export default class MainContainer extends React.Component<Props, State> {
     render () {
         const {demo_state} = this.props;
 

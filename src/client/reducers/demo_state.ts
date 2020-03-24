@@ -1,6 +1,6 @@
 import {initState} from '../initState';
 
-const demo_state = (state = initState, action) => {
+const demo_state = (state = initState.demo_state, action) => {
     switch (action.type) {
 
         default:

@@ -1,4 +1,4 @@
-interface DemoState {
+export interface DemoState {
   title: string
 }
 
