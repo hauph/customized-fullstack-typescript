@@ -1,6 +1,6 @@
-import {StateType} from './type/StateType';
+import type {State} from './type';
 
-export const initState: StateType = {
+export const initState: State = {
     demo_state: {
         title: "Hello World"
     }

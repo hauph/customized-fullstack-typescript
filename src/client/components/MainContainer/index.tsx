@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'; // Pages
 import Home from '../Home/index';
-import {DemoState} from '../../type/StateType';
+import type {DemoState} from '../../type/demo_state';
 
 interface Props {
     demo_state: DemoState
