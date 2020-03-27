@@ -1,8 +1,8 @@
-export interface DemoState {
+export type DemoState = {
   title: string
 }
 
-export interface StateType {
+export type StateType = {
   demo_state: DemoState
 }
 

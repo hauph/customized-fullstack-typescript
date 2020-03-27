@@ -1,10 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'; // Pages
-import Home from '../Home/index';
-import type {DemoState} from '../../type/demo_state';
+import Home from '../Home';
+import type {DemoState} from '../../types/demo_state';
+//import type {Action} from '../../types';
 
 interface Props {
-    demo_state: DemoState
+    demo_state: DemoState,
+    actions: any
 }
 
 interface State {
@@ -13,16 +15,14 @@ interface State {
 
 export default class MainContainer extends React.Component<Props, State> {
     render () {
-        const {demo_state} = this.props;
+        const {demo_state, actions} = this.props;
 
         return (
-            <BrowserRouter>
-                <div className="app__wrapper">
-                    {demo_state.title}
-                    <button>Change</button>
-                    <Home />
-                </div>
-            </BrowserRouter>
+            <div className="app__wrapper">
+                {demo_state.title}
+                <button onClick={() => actions.changeDemoState()}>Change</button>
+                <Home />
+            </div>
         )
     }
 }

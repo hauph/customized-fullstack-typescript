@@ -1,4 +1,4 @@
-import type { DemoStateAction } from '../types/demo_state'
+import type { DemoStateAction } from '../../types/demo_state'
 //import type { ThunkAction } from '../types'
 
 export const changeDemoState = (title: string): DemoStateAction => {

@@ -2,13 +2,13 @@ import type { Store as ReduxStore, Dispatch as ReduxDispatch } from 'redux'
 
 import type { DemoStateAction } from './demo_state';
 
-import type {StateType} from './demo_state.d';
+import type {StateType} from './demo_state';
 
 // APP ACTION TYPE
 export type Action = DemoStateAction; // | AnotherAction
 
 // APP STATE TYPE
-export type State = StateType;
+export type State = StateType; // | AnotherState
 
 // APP STORE
 export type Store = ReduxStore<State, Action>;

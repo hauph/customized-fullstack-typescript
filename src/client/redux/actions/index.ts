@@ -1,7 +1,7 @@
 import * as DemoStateAction from './demo_state'
 
 const Actions = {
-    DemoStateAction,
+    ...DemoStateAction,
     //...AnotherAction,
 }
 
