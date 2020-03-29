@@ -42,8 +42,6 @@ git push -u origin master
 <img src="https://github.com/gilamran/fullstack-typescript/raw/master/assets/images/flow.png" width="500">
 </p>
 
----
-
 ## Requirements
 
 - `NodeJs 12.13+`, `Chrome 79+` or `FireFox 72+`
@@ -98,8 +96,6 @@ git push -u origin master
 ### Config
 
 All applications require a config mechanism, for example, `SLACK_API_TOKEN`. Things that you don't want in your git history, you want a different environment to have different value (dev/staging/production). This repo uses the file `config.ts` to access all your app variables. And a `.env` file to override variable in dev environment. This file is ignored from git.
-
----
 
 #### What's not included
 
