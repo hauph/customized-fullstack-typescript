@@ -1,18 +1,22 @@
-WORK IN PROGRESS!
-A README will be released soon :)
-
-<!-- # FAST FullStack React with TypeScript starter kit.
+# FAST FullStack React with TypeScript starter kit.
 
 <img src="https://github.com/gilamran/fullstack-typescript/raw/master/assets/images/logo.png" width="150">
 
 ---
+
+## Introduction
+
+This boilerplate/starter kit is customized from [Gilamran's starter kit](https://github.com/gilamran/fullstack-typescript) with the following differences (comparing to the original).
+- Removing Material-ui
+- Adding SCSS
+- Adding Redux
 
 ## Quick Start
 
 Just clone this repository into your own project folder. and start working
 
 ```bash
-git clone https://github.com/gilamran/fullstack-typescript.git <MyProjectName>
+git clone https://github.com/hauph/customized-fullstack-typescript.git <MyProjectName>
 cd <MyProjectName>
 npm install
 npm run dev
@@ -30,7 +34,7 @@ git push -u origin master
 
 - **Simple** to jump into, **Fast** because it is simple.
 - Separate `tsconfig.json` for client and server.
-- Client and server can share code (And types). For example: [IUserDTO.d.ts](https://github.com/gilamran/fullstack-typescript/blob/master/src/shared/IUserDTO.d.ts)
+<!-- - Client and server can share code (And types). For example: [IUserDTO.d.ts](https://github.com/gilamran/fullstack-typescript/blob/master/src/shared/IUserDTO.d.ts) -->
 - The client is bundled using [Webpack](https://webpack.github.io/) because it goes to the browser.
 - The server is emitted by [TypeScript](https://github.com/Microsoft/TypeScript) because node 6 supports es6.
 
@@ -52,6 +56,12 @@ git push -u origin master
 ├── /dist/                            # All the generated files will go here, and will run from this folder
 ├── /src/                             # The source code of the application
 │   ├── /client/                      # React app
+│   │   ├── /components/              # All React components' folders will be created in this folder. 
+│   │   │   ├── /Home/                # A sample component folder
+│   │   │   │   ├── index.tsx         # Component's compulsory file
+│   │   │   │   ├── styles.scss       # Component's scss file (optional)
+│   │   ├── /redux/                   # State management
+│   │   ├── /types/                   # TypeScript's declaration files for client folder
 │   ├── /server/                      # Express server app
 │   ├── /shared/                      # The shared code between the client and the server
 ├── /assets/                          # images, css, jsons etc.
@@ -70,7 +80,8 @@ git push -u origin master
 
 - [React v16](https://facebook.github.io/react/)
 - [React router v4](https://github.com/ReactTraining/react-router)
-- [Material-ui](https://github.com/mui-org/material-ui)
+- [Redux](https://github.com/reduxjs/redux)
+- [Sass loader](https://github.com/webpack-contrib/sass-loader)
 - [Jest](https://github.com/facebook/jest)
 - [Styled Components](https://github.com/styled-components/styled-components)
 - [Axios](https://github.com/mzabriskie/axios) (For Client/Server communication)
@@ -93,10 +104,9 @@ All applications require a config mechanism, for example, `SLACK_API_TOKEN`. Thi
 #### What's not included
 
 - Universal (Server side rendering)
-- Redux/MobX (State management)
 
 ---
 
 #### Licence
 
-This code is released as is, under MIT licence. Feel free to use it for free for both commercial and private projects. No warranty provided. -->
+This code is released as is, under MIT licence. Feel free to use it for free for both commercial and private projects. No warranty provided.
