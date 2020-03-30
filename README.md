@@ -46,7 +46,7 @@ git push -u origin master
 
 - `NodeJs 12.13+`, `Chrome 79+` or `FireFox 72+`
 
-### Directory Layout
+## Directory Layout
 
 ```bash
 .
@@ -74,7 +74,7 @@ git push -u origin master
 ├── README.md                         # This file
 ```
 
-### What's included
+## What's included
 
 - [React v16](https://facebook.github.io/react/)
 - [React router v4](https://github.com/ReactTraining/react-router)
@@ -84,7 +84,7 @@ git push -u origin master
 - [Styled Components](https://github.com/styled-components/styled-components)
 - [Axios](https://github.com/mzabriskie/axios) (For Client/Server communication)
 
-### Usage
+## Usage
 
 - `npm run dev` - Client and server are in watch mode with source maps, opens [http://localhost:3000](http://localhost:3000)
 - `npm run test` - Runs jest tests
@@ -93,11 +93,11 @@ git push -u origin master
 - `npm start` - Just runs `node ./dist/server/server.js`
 - `npm start:prod` - sets `NODE_ENV` to `production` and then runs `node ./dist/server/server.js`. (Bypassing webpack proxy)
 
-### Config
+## Config
 
 All applications require a config mechanism, for example, `SLACK_API_TOKEN`. Things that you don't want in your git history, you want a different environment to have different value (dev/staging/production). This repo uses the file `config.ts` to access all your app variables. And a `.env` file to override variable in dev environment. This file is ignored from git.
 
-### What's not included
+## What's not included
 
 - Universal (Server side rendering)
 
