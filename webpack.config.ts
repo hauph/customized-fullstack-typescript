@@ -6,10 +6,12 @@ import cssnano from 'cssnano';
 import { SERVER_PORT, IS_DEV, WEBPACK_PORT } from './src/server/config';
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 const plugins = IS_DEV ? 
                   [new ManifestPlugin()] 
                 : [
+                    new CleanWebpackPlugin(),
                     new ManifestPlugin(),
                     new MiniCssExtractPlugin({
                       filename: `css/[name].css`,

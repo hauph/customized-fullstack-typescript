@@ -14,7 +14,7 @@ import { createLogger } from 'redux-logger';
 // Root State for App
 import { initState } from './redux/initState';
 // Router for App deep links
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 //const middlewares = [ thunk ];
 const middlewares = [ thunk, createLogger() ]; 
